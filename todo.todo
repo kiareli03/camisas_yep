@@ -1,0 +1,49 @@
+Criação do Projeto CAMISAS-YEP
+
+Configurar o Porjeto:
+    ✔  Criar o projeto @done(24-11-17 20:19)
+    ✔  Adicionar Angular Material @done(24-11-17 20:19)
+    ☐  Configurar o Firebase para simular o backend
+
+Estrutura de Diretórios e módulos:
+
+     Core Serviços globais:
+        Carrinho
+        Autenticação
+        Produtos
+
+
+     Shared Componentes e Pipes Reutilizaveis: 
+        Header
+            ✔ headerComponent @started(24-11-17 20:19) @done(24-11-17 20:19) @lasted(28s)
+        Footer
+            ✔ footerComponent @done(24-11-17 20:19)
+
+     Features Funcionalidades:
+        Home
+            ✔ homeComponent @done(24-11-17 20:19)
+
+        Products
+            ☐ productsComponent
+
+        products-details
+            ☐ productsDetailsComponents
+
+        cart 
+            ☐ CartComponent 
+
+Serviços:
+    
+    Produtos:
+        ✘  Crud para gerenciar os produtos. @cancelled(24-11-17 20:20)
+        ☐  Busca 
+        ✘  filtros @cancelled(24-11-17 20:20)
+    
+    Carrinho:
+        ☐ adicionar/remover itens
+        ☐ gerenciar o estado do carrinho
+
+    Autenticação:
+        ✘ Login e cadastro @cancelled(24-11-17 20:20)
+        ✘ Persistencia de sessão @cancelled(24-11-17 20:20)
+    

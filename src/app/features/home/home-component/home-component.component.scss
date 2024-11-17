@@ -1,0 +1,134 @@
+.home {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Banner Principal */
+  .banner {
+    text-align: center;
+    padding: 0px;
+    background-color: #f5f5f5;
+    position: relative;
+  }
+  
+  .banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-size: 3rem;
+  }
+  
+  .banner p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+  }
+  
+  /* Apresentação da Empresa */
+  .about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Destaques e Promoções */
+  .highlights {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .highlights h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .highlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  .aboutContent{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  .text-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .highlight-cards {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .banner h1 {
+      font-size: 2rem;
+    }
+  
+    .banner p {
+      font-size: 1rem;
+    }
+  }
+  
