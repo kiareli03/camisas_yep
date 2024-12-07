@@ -1,72 +1,87 @@
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 40px;
-    text-align: center;
-  }
-  
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #f8f9fa;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
-  
+
   .footer-section {
-    flex: 1;
-    margin: 10px;
+    text-align: center;
+    margin: 0;
   }
-  
-  .footer-section h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #f8f9fa;
+
+  .social-icons {
+    flex-wrap: wrap;
   }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin: 5px 0;
-  }
-  
-  .footer-section ul li a {
-    color: #ddd;
-    text-decoration: none;
-  }
-  
-  .footer-section ul li a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
-  .social-icons a {
-    font-size: 1.5rem;
-    margin: 0 10px;
-    color: #ddd;
-    text-decoration: none;
-  }
-  
-  .social-icons a:hover {
-    color: #fff;
-  }
-  
-  .footer-section p {
-    font-size: 0.9rem;
-    margin-top: 10px;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .footer-section {
-      margin: 20px 0;
-    }
-  }
-  
+}

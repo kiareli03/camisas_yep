@@ -1,11 +1,19 @@
 <header class="header">
     <div class="header-container">
-      <!-- Logo -->
+      
       <div class="logo">
         <a routerLink="/">CamisasYep</a>
       </div>
+
+      <div>
+        <ul>
+          <a [routerLink]="['/']">Home</a>
+          <a [routerLink] ="['/produtos']">Produtos</a>
+        </ul>
+      </div>
+      
   
-      <!-- Barra de pesquisa -->
+      
       <div class="search-bar">
         <input 
           type="text" 
@@ -16,9 +24,9 @@
         <button (click)="onSearch()">🔍</button>
       </div>
   
-      <!-- Ícone do Carrinho -->
+      
       <div class="cart">
-        <a routerLink="/cart" class="cart-link">
+        <a routerLink="/cart-summary" class="cart-link">
           🛒
           <span class="cart-count">{{ cartCount }}</span>
         </a>

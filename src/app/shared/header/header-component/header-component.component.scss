@@ -1,70 +1,137 @@
 .header {
-    background-color: #ffffff;
-    padding: 10px 20px;
-    border-bottom: 1px solid #000000;
-  }
-  
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #000000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 400px;
+  margin: 10px 20px; /* Ajuste para espaçamento em telas pequenas */
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-link {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: #dc3545;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+.header-container div a {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.cart-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.cart-link:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para dispositivos menores */
+@media (max-width: 768px) {
   .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
-  
+
   .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
+    margin-bottom: 10px; /* Espaçamento entre a logo e os outros itens */
   }
-  
+
   .search-bar {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    max-width: 400px;
-    margin: 0 20px;
+    width: 80%; /* Ocupa a largura total */
+    margin: 10px 0; /* Ajusta o espaçamento */
   }
-  
+
   .search-bar input {
-    flex: 1;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
+    font-size: 0.9rem;
+  }
+
+  .search-bar button {
+    font-size: 0.9rem;
+  }
+
+  .cart-link {
+    font-size: 1.2rem; /* Ajuste para o texto não ficar muito grande */
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte para telas muito pequenas */
+  }
+
+  .search-bar input {
+    font-size: 0.6rem;
+    padding: 6px 8px;
+  }
+
+  .search-bar button {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+
+  .cart-link {
     font-size: 1rem;
   }
-  
-  .search-bar button {
-    padding: 8px 12px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 0 4px 4px 0;
-  }
-  
-  .search-bar button:hover {
-    background-color: #0056b3;
-  }
-  
-  .cart {
-    position: relative;
-  }
-  
-  .cart-link {
-    font-size: 1.5rem;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .cart-count {
-    position: absolute;
-    top: -5px;
-    right: -10px;
-    background: #dc3545;
-    color: #fff;
-    font-size: 0.8rem;
-    font-weight: bold;
-    border-radius: 50%;
-    padding: 2px 6px;
-  }
-  
+}

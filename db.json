@@ -1,0 +1,165 @@
+{
+    "produtos": [
+      {
+        "id": 1,
+        "nome": "Camiseta Básica",
+        "preco": 49.99,
+        "descricao": "Camiseta 100% algodão, confortável e ideal para o dia a dia.",
+        "cores": ["#000", "#fff", "#f00"],
+        "imagem": "assets/images/camiseta1.jpg"
+      },
+      {
+        "id": 2,
+        "nome": "Camiseta Estampada",
+        "preco": 69.99,
+        "descricao": "Camiseta com estampa moderna e estilo único.",
+        "cores": ["#ff5733", "#33c3ff", "#8e44ad"],
+        "imagem": "assets/images/camiseta2.jpg"
+      },
+      {
+        "id": 3,
+        "nome": "Camiseta Slim Fit",
+        "preco": 89.99,
+        "descricao": "Modelo ajustado ao corpo, ideal para ocasiões casuais.",
+        "cores": ["#28a745", "#ffc107", "#343a40"],
+        "imagem": "assets/images/camiseta3.jpg"
+      },
+      {
+        "id": 4,
+        "nome": "Camiseta Premium",
+        "preco": 119.99,
+        "descricao": "Feita com materiais de alta qualidade e design exclusivo.",
+        "cores": ["#ff1493", "#1e90ff", "#228b22"],
+        "imagem": "assets/images/camiseta4.jpg"
+      },
+      {
+        "id": 5,
+        "nome": "Camiseta Polo",
+        "preco": 79.99,
+        "descricao": "Elegante e confortável, ideal para eventos casuais e formais.",
+        "cores": ["#2c3e50", "#ecf0f1", "#d35400"],
+        "imagem": "assets/images/camiseta5.jpg"
+      },
+      {
+        "id": 6,
+        "nome": "Camiseta Longline",
+        "preco": 64.99,
+        "descricao": "Camiseta com corte alongado e estiloso.",
+        "cores": ["#bdc3c7", "#7f8c8d", "#3498db"],
+        "imagem": "assets/images/camiseta6.jpg"
+      },
+      {
+        "id": 7,
+        "nome": "Camiseta Oversized",
+        "preco": 74.99,
+        "descricao": "Modelo folgado e confortável, ideal para looks despojados.",
+        "cores": ["#34495e", "#16a085", "#e74c3c"],
+        "imagem": "assets/images/camiseta7.jpg"
+      },
+      {
+        "id": 8,
+        "nome": "Camiseta Tie-Dye",
+        "preco": 59.99,
+        "descricao": "Camiseta com design colorido e despojado.",
+        "cores": ["#ff69b4", "#8b0000", "#4b0082"],
+        "imagem": "assets/images/camiseta8.jpg"
+      },
+      {
+        "id": 9,
+        "nome": "Camiseta Raglan",
+        "preco": 54.99,
+        "descricao": "Design clássico com mangas de cor contrastante.",
+        "cores": ["#ff4500", "#008000", "#0000ff"],
+        "imagem": "assets/images/camiseta9.jpg"
+      },
+      {
+        "id": 10,
+        "nome": "Camiseta Dry Fit",
+        "preco": 99.99,
+        "descricao": "Perfeita para atividades esportivas, com tecido respirável.",
+        "cores": ["#00ced1", "#ff6347", "#ffeb3b"],
+        "imagem": "assets/images/camiseta10.jpg"
+      },
+      {
+        "id": 11,
+        "nome": "Camiseta V-Neck",
+        "preco": 47.99,
+        "descricao": "Com decote em V, ideal para looks elegantes.",
+        "cores": ["#800000", "#ffa500", "#add8e6"],
+        "imagem": "assets/images/camiseta11.jpg"
+      },
+      {
+        "id": 12,
+        "nome": "Camiseta Básica Plus Size",
+        "preco": 52.99,
+        "descricao": "Tamanhos maiores para um ajuste perfeito.",
+        "cores": ["#000080", "#708090", "#ff7f50"],
+        "imagem": "assets/images/camiseta12.jpg"
+      },
+      {
+        "id": 13,
+        "nome": "Camiseta Com Bolso",
+        "preco": 62.99,
+        "descricao": "Prática e estilosa, com bolso frontal.",
+        "cores": ["#4682b4", "#d2691e", "#7fff00"],
+        "imagem": "assets/images/camiseta13.jpg"
+      },
+      {
+        "id": 14,
+        "nome": "Camiseta Cropped",
+        "preco": 44.99,
+        "descricao": "Modelo curto e moderno, ideal para o verão.",
+        "cores": ["#ffb6c1", "#800080", "#2e8b57"],
+        "imagem": "assets/images/camiseta14.jpg"
+      },
+      {
+        "id": 15,
+        "nome": "Camiseta Listrada",
+        "preco": 68.99,
+        "descricao": "Estampa de listras clássica e versátil.",
+        "cores": ["#000000", "#ffffff", "#ffa07a"],
+        "imagem": "assets/images/camiseta15.jpg"
+      },
+      {
+        "id": 16,
+        "nome": "Camiseta Infantil",
+        "preco": 39.99,
+        "descricao": "Confortável e divertida, ideal para crianças.",
+        "cores": ["#f08080", "#dda0dd", "#00fa9a"],
+        "imagem": "assets/images/camiseta16.jpg"
+      },
+      {
+        "id": 17,
+        "nome": "Camiseta Regata",
+        "preco": 34.99,
+        "descricao": "Modelo leve e ideal para os dias quentes.",
+        "cores": ["#f5f5f5", "#00008b", "#c71585"],
+        "imagem": "assets/images/camiseta17.jpg"
+      },
+      {
+        "id": 18,
+        "nome": "Camiseta de Manga Longa",
+        "preco": 74.99,
+        "descricao": "Perfeita para dias mais frios, com tecido macio.",
+        "cores": ["#ffdab9", "#5f9ea0", "#9932cc"],
+        "imagem": "assets/images/camiseta18.jpg"
+      },
+      {
+        "id": 19,
+        "nome": "Camiseta Com Capuz",
+        "preco": 89.99,
+        "descricao": "Modelo casual e estiloso, com capuz ajustável.",
+        "cores": ["#8b4513", "#556b2f", "#00bfff"],
+        "imagem": "assets/images/camiseta19.jpg"
+      },
+      {
+        "id": 20,
+        "nome": "Camiseta Social",
+        "preco": 99.99,
+        "descricao": "Modelo elegante e sofisticado, ideal para eventos formais.",
+        "cores": ["#1c1c1c", "#dcdcdc", "#ffa500"],
+        "imagem": "assets/images/camiseta20.jpg"
+      }
+    ]
+  }
+  
