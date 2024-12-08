@@ -1,0 +1,26 @@
+<div class="cart-list">
+    <div class="cart-item">
+      <img src="{{ product().image }}" alt="{{ product().name }}" class="product-image" />
+  
+      <div class="item-details">
+        <span class="title">{{ product().name }}</span>
+        <span class="price">₹ {{ product().price }}</span>
+        <span class="selected-size">Tamanho: {{ product().selectedSize }}</span>
+        <span class="selected-color">
+          Cor:
+          <span [style.backgroundColor]="product().selectedColor" class="selected-color-swatch"></span>
+        </span>
+  
+        <div class="color">
+          @for (color of product()!.colors; track $index) {
+            <span [style.backgroundColor]="color" class="color-swatch"></span>
+          }
+        </div>
+      </div>
+  
+      <button (click)="handleClick()" class="remove-btn">{{ label() }}</button>
+    </div>
+
+  </div>
+  
+  

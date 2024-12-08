@@ -1,9 +1,18 @@
-    <div class="card">
-        <div class="card-content">
-            <span class="title">{{ product().name }}</span>
-            <span class="description"> {{ product().description }}</span>
-            <button (click)="handleClick()">{{ label() }}</button>
+<div class="product-list">
+    <div class="product">
+        <img src=" {{ product().image }} " alt="{{ product().name }}">
+
+
+        <span class="title">{{ product().name }}</span>
+        <span class="price"> ₹ {{ product().price }}</span>
+        <span class="description"> {{ product().description }}</span>
+
+        <div class="color">
+            @for (color of product()!.colors; track $index) {
+            <span [style.backgroundColor]="color" class="color-swatch"></span>
+            }
         </div>
+
+        <button (click)="handleClick()">{{ label() }}</button>
     </div>
-
-
+</div>
