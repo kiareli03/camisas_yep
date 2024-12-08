@@ -207,63 +207,63 @@
   ],
   "orders": [
     {
-      "id": "aa68",
+      "id": "7c66",
       "cartItems": [
         {
-          "id": "1",
-          "name": "Camiseta Básica",
-          "price": 49.99,
-          "description": "Camiseta 100% algodão, confortável e ideal para o dia a dia.",
+          "id": "2",
+          "name": "Camiseta Estampada",
+          "price": 59.99,
+          "description": "Camiseta com estampas criativas para um estilo único.",
           "colors": [
-            "#000",
-            "#fff",
-            "#f00"
+            "#ff5733",
+            "#33c3ff",
+            "#8e44ad"
           ],
           "sizes": [
             "P",
             "M",
             "G"
           ],
-          "image": "/images/camiseta1.jpg",
-          "selectedColor": "#000",
+          "image": "/images/camiseta2.jpg",
+          "selectedColor": "#33c3ff",
           "selectedSize": "G"
         },
         {
-          "id": "1",
-          "name": "Camiseta Básica",
-          "price": 49.99,
-          "description": "Camiseta 100% algodão, confortável e ideal para o dia a dia.",
+          "id": "3",
+          "name": "Camiseta Slim Fit",
+          "price": 69.99,
+          "description": "Modelo ajustado ao corpo, ideal para ocasiões casuais.",
           "colors": [
-            "#000",
-            "#fff",
-            "#f00"
+            "#28a745",
+            "#ffc107",
+            "#343a40"
           ],
           "sizes": [
             "P",
             "M",
             "G"
           ],
-          "image": "/images/camiseta1.jpg",
-          "selectedColor": "#f00",
-          "selectedSize": "M"
+          "image": "/images/camiseta3.jpg",
+          "selectedColor": "#343a40",
+          "selectedSize": "P"
         },
         {
-          "id": "4",
-          "name": "Camiseta Premium",
-          "price": 89.99,
-          "description": "Feita com materiais de alta qualidade e design exclusivo.",
+          "id": "3",
+          "name": "Camiseta Slim Fit",
+          "price": 69.99,
+          "description": "Modelo ajustado ao corpo, ideal para ocasiões casuais.",
           "colors": [
-            "#ff1493",
-            "#1e90ff",
-            "#228b22"
+            "#28a745",
+            "#ffc107",
+            "#343a40"
           ],
           "sizes": [
             "P",
             "M",
             "G"
           ],
-          "image": "/images/camiseta4.jpg",
-          "selectedColor": "#228b22",
+          "image": "/images/camiseta3.jpg",
+          "selectedColor": "#343a40",
           "selectedSize": "M"
         }
       ]
