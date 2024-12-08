@@ -1,28 +1,45 @@
-import { Injectable } from '@angular/core';
+import { computed, inject, Injectable, signal } from '@angular/core';
+import { CartItem } from '../../Interfaces/cart-items';
+import { Product } from '../../Interfaces/product';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
+  private httpClient = inject(HttpClient);
+  private cartItemsState = signal<CartItem[]>([]);
+  cartItems = this.cartItemsState.asReadonly();
+  totalCartItems = computed(() => this.cartItems().reduce((sum, item) => sum + item.amount, 0))
+
+  addToCart(product: Product) {
+    const items = this.cartItems();
+    const itemIndex = items.findIndex(item => item.product.name === product.name);
+    if (itemIndex < 0) {
+      items.push({ product, amount: 1});
+    }else {
+      items[itemIndex].amount += 1;
+    }
+
+    this.cartItemsState.set([...items]);
+  }
   
-  private cartItems: any[] = []; // Armazena os itens do carrinho
+  removeFromCart(product:Product) {
+    const items = this.cartItemsState();
+    const itemIndex = items.findIndex(item => item.product.name === product.name)
+    if (items[itemIndex].amount > 1){
+      items[itemIndex].amount -= 1;
+    }else{
+      items.splice(itemIndex, 1);
+    }
 
-  constructor() {}
-
-  // Adiciona um produto ao carrinho
-  addToCart(produtos: any) {
-    this.cartItems.push(produtos);
-    console.log('Produto adicionado ao carrinho:', produtos);
+    this.cartItemsState.set([...items]);
   }
 
-  // Retorna todos os produtos do carrinho
-  getCartItems() {
-    return this.cartItems;
+  saveOrder() {
+    this.httpClient.post('http://localhost:3000/orders', {cartItems: this.cartItems()}).subscribe(() => {
+      console.log('deu bom pra gravar');
+    })
   }
 
-  // Limpa o carrinho
-  clearCart() {
-    this.cartItems = [];
-    console.log('Carrinho limpo.');
-  }
 }

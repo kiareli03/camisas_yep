@@ -4,13 +4,13 @@ Refazendo HTML E CSS:
     ✔ Refazer a Home @done(24-12-07 18:34)
     ✔ Refazer o Product List @done(24-12-07 18:34)
     ✔ Refazer o Product Detail @done(24-12-07 18:37)
-    ☐ Refazer o Cart
+    ✔ Refazer o Cart @done(24-12-07 20:47)
     ☐ Fazer o NotFound
 
 Rotas/Links e Imagens:
-    ☐ Arrumar todas as rotas 
-    ☐ Arrumar os links 
-    ☐ Baixar as imagens
+    ✔ Arrumar todas as rotas @done(24-12-07 20:47)
+    ✔ Arrumar os links @done(24-12-07 20:48)
+    ✔ Baixar as imagens @done(24-12-07 20:48)
 
 Services:
     ☐ Cart services 

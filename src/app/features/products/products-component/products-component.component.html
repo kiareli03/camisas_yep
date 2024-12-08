@@ -1,20 +1,16 @@
-<div class="title"><h2>Produtos Disponíveis</h2></div>
+<h2>Produtos Disponíveis</h2>
 
 <div class="products-container">
+  @if (!isLoading()) {
+    @for (product of products(); track product.id) {
+      <app-card [product] = "product" (select)="addToCart(product)"/>
+    } @empty {
+      <p>Não há Produtos</p>
+    }
+  } @else {
+    <p>Carregando...</p>
+  }  
+
     
-    <div class="product" *ngFor="let produtos of produtos">
-      <img [src]="produtos.imagem" [alt]="produtos.nome" />
-      
-      <div class="product-info">
-        <h3>{{ produtos.nome }}</h3>
-        <p class="price">Preço: R$ {{ produtos.preco }}</p>
-        <p class="description">{{ produtos.descricao }}</p>
-        <p class="colors">
-          Cores Disponíveis:
-          <span *ngFor="let cor of produtos.cores" [style.backgroundColor]="cor"></span>
-        </p>
-        <button (click)="addToCart(produtos)">Adicionar ao Carrinho</button>
-      </div>
-    </div>
   </div>
-  
+      
