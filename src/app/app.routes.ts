@@ -1,14 +1,13 @@
 import { Routes } from '@angular/router';
-import { HomeComponentComponent } from './features/home/home-component/home-component.component';
-import { ProductsComponentComponent } from './features/products/products-component/products-component.component';
-import { ProductDeailsComponentComponent } from './features/product-details/product-deails-component/product-deails-component.component';
-import { CartComponentComponent } from './features/cart/cart-component/cart-component.component';
+import { CartComponent } from './components/pages/cart/cart.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { ProductsComponent } from './components/pages/products/products.component';
+import { ProductDetailsComponent } from './components/pages/product-details/product-details.component';
 
 export const routes: Routes = [
-
-    { path: '', component: HomeComponentComponent }, // Rota padrão
-    { path: 'produtos', component: ProductsComponentComponent },
-    { path: 'detalhe', component: ProductDeailsComponentComponent },
-    { path: 'cart-summary', component: CartComponentComponent },
-
+    { path: '', pathMatch: 'full', component: HomeComponent }, // Rota padrão
+    { path: 'produtos', component: ProductsComponent },
+    { path: 'produtos/:id', component: ProductDetailsComponent },
+    { path: 'carrinho', component: CartComponent },
+    { path: '**', redirectTo: '/' },
 ];

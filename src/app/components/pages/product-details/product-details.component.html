@@ -1,0 +1,36 @@
+<div class="product-detail">
+  @if (!isLoading()) {
+  <div class="image-section">
+    <img [src]="product()!.image" [alt]="product()!.name" class="product-image" />
+  </div>
+  <div class="info-section">
+    <h1 class="product-title">{{ product()!.name }}</h1>
+    <p class="product-price" routerLink="/produtos/456">R$ {{ product()!.price.toFixed(2) }}</p>
+    <p class="product-description">{{ product()!.description }}</p>
+
+    <div class="product-options">
+      <div class="sizes">
+        <label for="sizes">Tamanhos:</label>
+        <select id="sizes" (change)="selectedSize.set($any($event.target).value)">
+          <option disabled selected></option>
+          @for (size of product()!.sizes; track $index) {
+          <option [value]="size">{{ size }}</option>
+          }
+        </select>
+      </div>
+      <div class="colors">
+        <label for="colors">Cores:</label>
+        <div class="color-options">
+          @for (color of product()!.colors; track $index) {
+          <span [style.backgroundColor]="color" class="color-swatch" [class.selected]="selectedColor() === color"
+            (click)="selectedColor.set(color)"></span>
+          }
+        </div>
+      </div>
+    </div>
+
+    <button [disabled]="!isOptionsValid()" class="add-to-cart" (click)="addToCart()">Adicionar ao Carrinho</button>
+  </div>
+  }
+
+</div>

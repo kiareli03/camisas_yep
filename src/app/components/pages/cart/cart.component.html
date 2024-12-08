@@ -1,0 +1,17 @@
+<h1>Resumo do Carrinho</h1>
+<div class="cart-list">
+  @for (cartItem of cartItems(); track $index){
+    <app-card 
+    [product]="cartItem" 
+    label="Remove from cart"
+    (select)="removeFromCart($index)" 
+    />
+  } @empty {
+    <p>Não há items no Carrinho</p>
+  }
+</div>
+<button [disabled]="totalCartItems() === 0 " (click)="saveOrder()">Save order</button>
+
+
+
+
