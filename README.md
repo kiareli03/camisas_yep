@@ -9,8 +9,10 @@ A lógica principal consiste em permitir que o usuário navegue pela página de 
 
 O projeto utiliza:
 
-Injeção de services para buscar produtos da API e gerenciar o estado do carrinho. Métodos como addToCart, removeFromCart e saveOrder garantem a interação fluida entre o front-end e a API.
+Injeção de services para buscar produtos da API e gerenciar o estado do carrinho. 
+Métodos como addToCart, removeFromCart e saveOrder garantem a interação fluida entre o front-end e a API.
 Signals para controle de estado de algumas funcionalidades, mantendo a interface atualizada em tempo real.
+
 Este projeto está em desenvolvimento e deverá evoluir para um e-commerce completo, incluindo:
 
 Administração de produtos (CRUD).
